@@ -17,19 +17,19 @@ namespace ffc_backend
     {
         private const string VERSION = "1.0.1";
         public IConfiguration Configuration { get; }
-        private ILoggerFactory mLoggerFactor;
-        public Startup(IConfiguration configuration, ILoggerFactory loggerFactory)
+        private ILogger<Startup> mLoggerFactor;
+        public Startup(IConfiguration configuration, ILogger<Startup> logger)
         {
             Configuration = configuration;
-            mLoggerFactor = loggerFactory;
+            mLoggerFactor = logger;
         }
 
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-             var logger = mLoggerFactor.CreateLogger<Startup>();
-            logger.LogInformation("ConfigureServices started");
+            //var logger = services. mLoggerFactor.CreateLogger<Startup>();
+            mLoggerFactor.LogInformation("ConfigureServices started");
             services.AddControllers();
         }
 
