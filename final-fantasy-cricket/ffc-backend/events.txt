@@ -1,0 +1,162 @@
+/** 
+* Paste one or more documents here
+*/
+"events":
+	{
+		"captain":
+		{
+			"label":"captain",
+			"value": 2,
+			"points_earned": 0.0
+		},
+		"vice_captain":
+		{
+			"label":"v/x",
+			"value": 1.5,
+			"points_earned": 0.0
+		},
+		"starting_11":
+		{
+			"label":"starting 11",
+			"value": 0,
+			"points_earned": 0.0
+		},
+		"runs":
+		{
+			"label":"runs",
+			"value": 0,
+			"points_earned": 0.0
+		},
+		"fours" :
+		{
+			"label":"4s",
+			"value": 0,
+			"points_earned": 0.0
+		},
+		"sixes" :
+		{
+			"label":"6s",
+			"value": 0,
+			"points_earned": 0.0
+		},
+		"30s" :
+		{
+			"label":"30",
+			"value": 0,
+			"points_earned": 0.0
+		},
+		"50s" :
+		{
+			"label":"50",
+			"value": 0,
+			"points_earned": 0.0
+		},
+		"100s":
+		{
+			"label":"100",
+			"value": 0,
+			"points_earned": 0.0
+		},
+		"duck":
+		{
+			"label":"duck",
+			"value": false,
+			"points_earned": 0.0
+		},
+		"wkts":
+		{
+			"label":"wkts",
+			"value": 0,
+			"points_earned": 0.0
+		},
+		"maiden":
+		{
+			"label":"maiden",
+			"value": 0,
+			"points_earned": 0.0
+		},
+		"bonus":
+		{
+			"label":"bonus",
+			"value": 0,
+			"points_earned": 0.0
+		},
+		"catch":
+		{
+			"label":"catch",
+			"value": 0,
+			"points_earned": 0.0
+		},
+		"stumping":
+		{
+			"label":"stumping",
+			"value": 0,
+			"points_earned": 0.0
+		},
+		"run_out_thrower":
+		{
+			"label":"run out(thrower)",
+			"value": 0,
+			"points_earned": 0.0
+		},
+		"run_out_catcher":
+		{
+			"label":"run out(Catcher)",
+			"value": 0,
+			"points_earned": 0.0
+		},
+		"strike_rate_60_70" :
+		{
+			"label":"S/r",
+			"value": -2,
+			"points_earned": 0.0
+		},
+		"strike_rate_50_60" :
+		{
+			"label":"S/r",
+			"value": -4,
+			"points_earned": 0.0
+		},
+		"strike_rate_1_50" :
+		{
+			"label":"S/r",
+			"value": -6,
+			"points_earned": 0.0
+		},
+		"econ_rate_0_4":
+		{
+			"label":"E/R",
+			"value": 6,
+			"points_earned": 0.0
+		},
+		"econ_rate_4_4.99":
+		{
+			"label":"E/R",
+			"value": 4,
+			"points_earned": 0.0
+		},
+		"econ_rate_5_6":
+		{
+			"label":"E/R",
+			"value": 2,
+			"points_earned": 0.0
+		},
+		"econ_rate_9_10":
+		{
+			"label":"E/R",
+			"value": -2,
+			"points_earned": 0.0
+		},
+		"econ_rate_10-11":
+		{
+			"label":"E/R",
+			"value": -4,
+			"points_earned": 0.0
+		},
+		"econ_rate_11_100":
+		{
+			"label":"E/R",
+			"value": -6,
+			"points_earned": 0.0
+		}
+	}

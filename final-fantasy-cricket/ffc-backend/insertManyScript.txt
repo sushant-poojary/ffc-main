@@ -1,0 +1,132 @@
+db.cricketer_meta.insertMany([
+  {
+    "name": "Mayank Agarwal",
+    "type": "batsman"
+  },
+  {
+    "name": "Lokesh Rahul (c & wk)",
+    "type": "batsman"
+  },
+  {
+    "name": "Nicholas Pooran",
+    "type": "batsman"
+  },
+  {
+    "name": "Glenn Maxwell",
+    "type": "batsman"
+  },
+  {
+    "name": "Karun Nair",
+    "type": "batsman"
+  },
+  {
+    "name": "James Neesham",
+    "type": "batsman"
+  },
+  {
+    "name": "Sarfaraz Khan",
+    "type": "batsman"
+  },
+  {
+    "name": "Murugan Ashwin",
+    "type": "batsman"
+  },
+  {
+    "name": "Mohammed Shami",
+    "type": "batsman"
+  },
+  {
+    "name": "Sheldon Cottrell",
+    "type": "batsman"
+  },
+  {
+    "name": "Ravi Bishnoi",
+    "type": "batsman"
+  },
+  {
+    "name": "Chris Gayle",
+    "type": "batsman"
+  },
+  {
+    "name": "Mandeep Singh",
+    "type": "batsman"
+  },
+  {
+    "name": "Chris Jordan",
+    "type": "batsman"
+  },
+  {
+    "name": "Krishnappa Gowtham",
+    "type": "batsman"
+  },
+  {
+    "name": "Deepak Hooda",
+    "type": "batsman"
+  },
+  {
+    "name": "Hardus Viljoen",
+    "type": "batsman"
+  },
+  {
+    "name": "Jagadeesha Suchith",
+    "type": "batsman"
+  },
+  {
+    "name": "Ishan Porel",
+    "type": "batsman"
+  },
+  {
+    "name": "Mujeeb Ur Rahman",
+    "type": "batsman"
+  },
+  {
+    "name": "Tajinder Singh",
+    "type": "batsman"
+  },
+  {
+    "name": "Darshan Nalkande",
+    "type": "batsman"
+  },
+  {
+    "name": "Arshdeep Singh",
+    "type": "batsman"
+  },
+  {
+    "name": "Simran Singh",
+    "type": "batsman"
+  },
+  {
+    "name": "Harpreet Brar",
+    "type": "batsman"
+  }
+])
+
+album, year, US_peak_chart_post
+The White Stripes, 1999, -
+
+name, type
+Mayank Agarwal,batsman
+Lokesh Rahul (c & wk),batsman
+Nicholas Pooran,batsman
+Glenn Maxwell,batsman
+Karun Nair,batsman
+James Neesham,batsman
+Sarfaraz Khan,batsman
+Murugan Ashwin,batsman
+Mohammed Shami,batsman
+Sheldon Cottrell,batsman
+Ravi Bishnoi,batsman
+Chris Gayle,batsman
+Mandeep Singh,batsman
+Chris Jordan,batsman
+Krishnappa Gowtham,batsman
+Deepak Hooda,batsman
+Hardus Viljoen,batsman
+Jagadeesha Suchith,batsman
+Ishan Porel,batsman
+Mujeeb Ur Rahman,batsman
+Tajinder Singh,batsman
+Darshan Nalkande,batsman
+Arshdeep Singh,batsman
+Simran Singh,batsman
+Harpreet Brar,batsman

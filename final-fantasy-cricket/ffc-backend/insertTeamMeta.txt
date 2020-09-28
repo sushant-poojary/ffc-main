@@ -1,0 +1,27 @@
+db.team_meta.insert(
+{"team":"punjab","label":"Kings XI Punjab ","players":[db.cricketer_meta.findOne({name: "Mayank Agarwal"})._id,
+														db.cricketer_meta.findOne({name: "Lokesh Rahul (c & wk)"})._id,
+														db.cricketer_meta.findOne({name: "Nicholas Pooran"})._id,
+														db.cricketer_meta.findOne({name: "Glenn Maxwell"})._id,
+														db.cricketer_meta.findOne({name: "Karun Nair"})._id,
+														db.cricketer_meta.findOne({name: "James Neesham"})._id,
+														db.cricketer_meta.findOne({name: "Sarfaraz Khan"})._id,
+														db.cricketer_meta.findOne({name: "Murugan Ashwin"})._id,
+														db.cricketer_meta.findOne({name: "Mohammed Shami"})._id,
+														db.cricketer_meta.findOne({name: "Sheldon Cottrell"})._id,
+														db.cricketer_meta.findOne({name: "Ravi Bishnoi"})._id,
+														db.cricketer_meta.findOne({name: "Chris Gayle"})._id,
+														db.cricketer_meta.findOne({name: "Chris Jordan"})._id,
+														db.cricketer_meta.findOne({name: "Krishnappa Gowtham"})._id,
+														db.cricketer_meta.findOne({name: "Deepak Hooda"})._id,
+														db.cricketer_meta.findOne({name: "Hardus Viljoen"})._id,
+														db.cricketer_meta.findOne({name: "Jagadeesha Suchith"})._id,
+														db.cricketer_meta.findOne({name: "Ishan Porel"})._id,
+														db.cricketer_meta.findOne({name: "Mujeeb Ur Rahman"})._id,
+														db.cricketer_meta.findOne({name: "Tajinder Singh"})._id,
+														db.cricketer_meta.findOne({name: "Darshan Nalkande"})._id,
+														db.cricketer_meta.findOne({name: "Arshdeep Singh"})._id,
+														db.cricketer_meta.findOne({name: "Simran Singh"})._id,
+														db.cricketer_meta.findOne({name: "Harpreet Brar"})._id]}
+)
+
