@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ffc_backend.FccDBApi;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -12,6 +13,14 @@ namespace ffc_backend.Controllers
     [ApiController]
     public class Services : ControllerBase
     {
+
+        private readonly DBConnectionService _bookService;
+
+        public Services(DBConnectionService bookService)
+        {
+            _bookService = bookService;
+        }
+
         // GET: api/<Services>
         [HttpGet]
         public IEnumerable<string> Get()
@@ -30,7 +39,7 @@ namespace ffc_backend.Controllers
         [HttpPost]
         public void Post([FromBody] string value)
         {
-
+            //MongoDB.Driver.Builders<Conta
         }
 
         // PUT api/<Services>/5
