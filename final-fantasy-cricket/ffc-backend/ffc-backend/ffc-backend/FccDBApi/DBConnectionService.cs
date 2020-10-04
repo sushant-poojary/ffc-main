@@ -1,10 +1,6 @@
-﻿using ffc_backend.Model;
+﻿using ffc_backend.Model.collection;
 using ffc_backend.Model.database;
 using MongoDB.Driver;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace ffc_backend.FccDBApi
 {
@@ -12,7 +8,8 @@ namespace ffc_backend.FccDBApi
     {
         private readonly IDBConnectionSettings mDBConnectionSettings;
 
-        private readonly IMongoCollection<EventMeta> _books;
+        private readonly IMongoCollection<EventMeta> event_meta_templates;
+        private readonly IMongoCollection<User> user_collection;
 
         public DBConnectionService(IDBConnectionSettings connectionSettings)
         {
@@ -21,7 +18,13 @@ namespace ffc_backend.FccDBApi
             var client = new MongoClient(mDBConnectionSettings.connectionString);
             var database = client.GetDatabase(mDBConnectionSettings.databaseName);
 
-            _books = database.GetCollection<EventMeta>(mDBConnectionSettings.collectionName);
+            user_collection = database.GetCollection<User>("users");
+
+            var template = user_collection.Find<User>(user => true).ToList();
+            foreach (var item in template)
+            {
+                var id = item._id;
+            }
         }
     }
 }
