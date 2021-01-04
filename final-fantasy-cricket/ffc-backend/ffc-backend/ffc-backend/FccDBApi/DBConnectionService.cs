@@ -1,6 +1,7 @@
 ﻿using ffc_backend.Model.collection;
 using ffc_backend.Model.database;
 using MongoDB.Driver;
+using System;
 
 namespace ffc_backend.FccDBApi
 {
@@ -8,23 +9,39 @@ namespace ffc_backend.FccDBApi
     {
         private readonly IDBConnectionSettings mDBConnectionSettings;
 
-        private readonly IMongoCollection<EventMeta> event_meta_templates;
-        private readonly IMongoCollection<User> user_collection;
+        MongoClient mDBClient;
+        private readonly IMongoDatabase mDatabase;
+        private readonly IMongoCollection<MetaContainer<EventMeta>> mEventTemplateCollection;
+        private readonly IMongoCollection<MetaContainer<GameMeta>> mGameTemplateCollection;
+        //private readonly IMongoCollection<User> mUsersCollection;
 
         public DBConnectionService(IDBConnectionSettings connectionSettings)
         {
             mDBConnectionSettings = connectionSettings;
+            mDBClient = new MongoClient(mDBConnectionSettings.connectionString);
+            mDatabase = mDBClient.GetDatabase(mDBConnectionSettings.databaseName);
 
-            var client = new MongoClient(mDBConnectionSettings.connectionString);
-            var database = client.GetDatabase(mDBConnectionSettings.databaseName);
+            //mDBClient.
+            //var cluster_desc = database.Client.Cluster.Description;
+            //var dbList = client.ListDatabases().ToList();
 
-            user_collection = database.GetCollection<User>("users");
+            //event_meta_templates = mDatabase.GetCollection<EventMeta>("data_templates");
 
-            var template = user_collection.Find<User>(user => true).ToList();
-            foreach (var item in template)
-            {
-                var id = item._id;
-            }
+            //User newUser = new User() { name = "vishal", password = "dwad", username = "nightmare" };
+            //user_collection.InsertOne(newUser);
+
+            //var template = event_meta_templates.Find<EventMeta>(user => true).FirstOrDefault();
+
+            mEventTemplateCollection = mDatabase.GetCollection<MetaContainer<EventMeta>>("data_templates");
+            mGameTemplateCollection = mDatabase.GetCollection<MetaContainer<GameMeta>>("data_templates");
+
+            var Eventtemplate = mEventTemplateCollection.Find<MetaContainer<EventMeta>>(user => true).FirstOrDefault();
+            var Gametemplate = mGameTemplateCollection.Find<MetaContainer<GameMeta>>(fame => true).FirstOrDefault();
+        }
+
+        internal void RegisterUser(string username, string password, string name)
+        {
+            throw new NotImplementedException();
         }
     }
 }

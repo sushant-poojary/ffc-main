@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using ffc_backend.FccDBApi;
+using ffc_backend.Model.collection;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -14,11 +15,11 @@ namespace ffc_backend.Controllers
     public class Services : ControllerBase
     {
 
-        private readonly DBConnectionService _bookService;
+        private readonly DBConnectionService mDatabaseService;
 
         public Services(DBConnectionService bookService)
         {
-            _bookService = bookService;
+            mDatabaseService = bookService;
         }
 
         // GET: api/<Services>
@@ -34,6 +35,19 @@ namespace ffc_backend.Controllers
         {
             return "value";
         }
+
+        // POST api/<Services>
+        [HttpPost("register-user")]
+        public void PostRegisterUser([FromBody] User user)
+        {
+            mDatabaseService.RegisterUser(user.username, user.password, user.name);
+        }
+
+        //[HttpPost("register-user")]
+        //public void PostRegisterUser([FromBody] string username, [FromBody] string password, [FromBody] string name)
+        //{
+        //    mDatabaseService.RegisterUser(username, password, name);
+        //}
 
         // POST api/<Services>
         [HttpPost]

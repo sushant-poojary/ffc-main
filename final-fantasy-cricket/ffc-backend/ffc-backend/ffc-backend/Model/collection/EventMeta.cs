@@ -1,7 +1,4 @@
-﻿using MongoDB.Bson;
-using MongoDB.Bson.Serialization.Attributes;
-
-namespace ffc_backend.Model.collection
+﻿namespace ffc_backend.Model.collection
 {
     // Root myDeserializedClass = JsonConvert.DeserializeObject<Root>(myJsonResponse); 
     public class Captain
@@ -200,7 +197,7 @@ namespace ffc_backend.Model.collection
         public int points_earned { get; set; }
     }
 
-    public class Meta
+    public class EventMeta
     {
         public Captain captain { get; set; }
         public ViceCaptain vice_captain { get; set; }
@@ -232,12 +229,12 @@ namespace ffc_backend.Model.collection
         public EconRate11100 econ_rate_11_100 { get; set; }
     }
 
-    public class EventMeta
-    {
-        [BsonId]
-        [BsonRepresentation(BsonType.ObjectId)]
-        public string Id { get; set; }
-        public string meta_type { get; set; }
-        public Meta meta { get; set; }
-    }
+    //public class EventMeta
+    //{
+    //    [BsonId]
+    //    [BsonRepresentation(BsonType.ObjectId)]
+    //    public string _id { get; set; }
+    //    public string meta_type { get; set; }
+    //    public Meta meta { get; set; }
+    //}
 }
